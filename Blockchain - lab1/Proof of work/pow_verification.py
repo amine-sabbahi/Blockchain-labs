@@ -1,8 +1,8 @@
-from blockchain import Blockchain, Block
+from pow_blockchain import Pow_Blockchain, Block
 import time
 
 def test_pow(difficulty):
-    blockchain = Blockchain()
+    blockchain = Pow_Blockchain()
     blockchain.set_difficulty(difficulty)
 
     start_time = time.time()

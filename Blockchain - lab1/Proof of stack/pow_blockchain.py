@@ -14,7 +14,7 @@ class Block:
         block_string = f"{self.index}{self.previous_hash}{self.timestamp}{self.data}{self.nonce}"
         return hashlib.sha256(block_string.encode()).hexdigest()
 
-class Blockchain:
+class Pow_Blockchain:
     def __init__(self):
         self.chain = [self.create_genesis_block()]
         self.difficulty = 4
